@@ -1,0 +1,181 @@
+.parent{
+    display: flex;
+    margin-bottom: 70px;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.form{
+
+    margin-top: 0px;
+    
+}
+
+#options{
+
+    margin-top: 60px;
+    
+}
+
+.name{
+
+    font-size: 40px;
+    font-weight: 580;
+
+}
+#thin{
+    font-weight: 200;
+}
+
+#id{
+
+    font-size: 25px;
+   
+}
+#but:hover{
+    transition: 0.2 all ease;
+    padding: 10px;;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+#but{
+
+    padding: 10px;;
+    margin: 10px;
+    border-radius: 10px;
+    color:black;
+    background-color: white;
+}
+
+.second{
+
+   
+    margin-top: 60px;
+    margin-left: -40px;
+    padding-right: 10px;
+}
+.secondd{
+
+    width: 80%;
+    margin-top: 60px;
+    padding-left: 300px;
+    padding-right: 50px;
+}
+
+.first{
+    margin-top: 60px;
+    padding-left: 200px;
+    padding-right: 50px;
+    
+
+}
+.firstt{
+    margin-top: 60px;
+    padding-left: 190px;
+    padding-right: 50px;
+
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: darkcyan;
+}
+
+#submit{
+    
+    padding: 10px;
+    border-radius: 5px;
+    color:black;
+    background-color: white;
+}
+
+#author
+{
+    font-size: 25px;
+}
+#name
+{
+    font-size: 25px;
+}
+#price
+{
+    font-size: 25px;
+}
+.insert
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 80px;
+}
+#text{
+
+    width: 400px;
+}
+.dis{
+
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.display{
+
+    margin-left: 370px;
+
+}
+
+table{
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#books{
+
+    font-size: 20px;
+   border: 10px solid black;
+    
+}
+th{
+    padding: 10px;
+}
+
+td,tr{
+    border: 3px solid black;
+
+}
+
+#clear:hover{
+    cursor: pointer;
+    background-color: darkcyan;
+}
+#clear{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: -10px;
+    border-radius: 5px;
+    color:black;
+    background-color: white;
+}
+
+#delrec:hover{
+    cursor: pointer;
+    background-color: darkcyan;
+}
+#delrec{
+    padding: 10px;
+    border-radius: 5px;
+    color:black;
+    background-color: white;
+}
+
+#sp{
+
+    font-size: 15px;
+    font-weight: 400;
+}

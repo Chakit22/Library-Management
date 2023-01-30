@@ -1,0 +1,19 @@
+<div class="body-form">
+    <div id="tit" class="text-center">Online Library Management System</div>
+    <div id="title" class="text-center">LOGIN</div>
+    <form #loginForm="ngForm" class="text-center lgn">
+      <div id="id">Enter UserName</div><br>
+      <input name="name" required #name="ngModel" placeholder="Enter UserName" pattern="Chakit" ngModel><br> 
+      <!-- pattern describes the hard-coded value which has to be validated.-->
+      <!-- If we hover over the above input element and the data entered is invalid then it prints User not found!!-->
+      <span *ngIf="name.invalid && name.touched">User not found!</span>
+      <br>
+      <div id="password">Enter Password</div><br>
+      <input name="password" type="password" required #password="ngModel" placeholder="Enter Password" pattern="123456" ngModel><br>
+      <span *ngIf="password.invalid && password.touched">Please enter a valid password!</span> 
+      <!-- if the password element is touched and it is invalid then it prints enter a valid password!!-->
+      <br>
+      <a routerLink="home"><button [disabled]="loginForm.invalid" id="submit" (click)="navigate()">SUBMIT</button></a>
+      <!-- On click of the above button navigate to the specified URL in the navigate function.-->
+    </form>
+</div> 

@@ -1,0 +1,128 @@
+<app-navbar></app-navbar> 
+<div class="main">
+    <div class="text-center name"><span id="thin">Hello</span> there!!</div>
+
+    <div class="parent">
+
+        <div class="firstt">  
+            <div class="form text-center">
+                <div id="id"><b>Book ID</b></div>
+                <br><br>
+
+                <!-- Fetch a particular Book by it's ID.-->
+                <form #dispform="ngForm" (ngSubmit)="getBookById(dispform.value)" class="text-left lgn">
+                    <input name="id" required #name="ngModel" placeholder="Book ID" type="number" ngModel>
+                    <br>
+                    <br>
+                    <button [disabled]="dispform.invalid" id="submit">VIEW BOOK</button>
+                </form>
+            </div>
+
+            <table id="books" class="text-center">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+                <!-- Fetch only if there exists a book by that id.-->
+                <tr *ngIf="fetchedBooks.length === 0">
+                    <td colspan="5">No Books to Display!!</td>
+                </tr>
+                <tr *ngFor = "let book of fetchedBooks">
+                    <td>{{book.id}}</td>
+                    <td>{{book.name}}</td>
+                    <td>{{book.author}}</td>
+                    <td>{{book.price}}</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- Update a particular Book by it's ID -->
+        <div class="secondd">
+            <div class="text-center insert">UPDATE A BOOK</div><br>
+            <form #updateForm="ngForm" (ngSubmit)="updateBook(updateForm.value)" class="text-left lgn">   
+                <div id="id">Enter the Book ID</div><br>
+                <input name="id" id="text" required #name="ngModel" placeholder="Enter the Book ID" ngModel><br>
+                <br>
+
+                <div id="name">Enter the Name of the Book</div><br>
+                <input name="name" id="text" required #name="ngModel" placeholder="Book Name" ngModel><br>
+                <br>
+
+                <div id="author">Enter Author's name</div><br>
+                <input name="author" id="text" required #author="ngModel" placeholder="Author's name" ngModel><br>
+                <br>
+
+                <div id="price">Enter Price</div><br>
+                <input name="price" id="text" required #price="ngModel" placeholder="Price" ngModel><br>
+                <br>
+
+                <button [disabled]="updateForm.invalid" id="submit" (click) = "alertmsg2()">UPDATE BOOK</button>
+
+            </form>
+        </div>
+    </div>
+
+    
+    <div class="parent">
+        <div class="first"> 
+        <div class="text-center insert">INSERT A BOOK</div><br>
+
+            <!-- Add a New book to the database!!-->
+            <form #postForm="ngForm" (ngSubmit)="addBook(postForm.value)" class="text-left lgn">
+
+                <div id="name">Enter the Name of the Book</div><br>
+                <input name="name" id="text" required #name="ngModel" placeholder="Book Name" ngModel><br>
+                <br>
+            
+                <div id="author">Enter Author's name</div><br>
+                <input name="author" id="text" required #author="ngModel" placeholder="Author's name" ngModel><br>
+                <br>
+
+                <div id="price">Enter price</div><br>
+                <input name="price" id="text" required #price="ngModel" placeholder="Price" ngModel><br>
+                <br>
+
+                <button [disabled]="postForm.invalid" id="submit" (click) = "alertmsg1()">INSERT BOOK</button>&nbsp;&nbsp;&nbsp;
+
+            </form>
+        </div> 
+
+        <!-- Get all books -->
+        <div class="second">
+            <div class="display text-center">
+                <div class="dis">DATABASE</div>
+                <div>
+                    <table id="books" class="text-center">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Author</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                        <tr *ngIf="allBooks.length === 0">
+                        <td colspan="5">No Books Available!!</td>
+                        </tr>
+                        <tr *ngFor="let book of allBooks; let i =index">
+                            <td>{{ book.id}}</td>
+                            <td>{{book.name}}</td>
+                            <td>{{book.author}}</td>
+                            <td>{{book.price}}</td>
+                            <td><button id="delrec" (click)="deleteBook(book)">DELETE BOOK</button></td>
+                        </tr>
+                    </table>
+
+                    <!-- Fetch All Books and Delete All Books!!.-->
+                    <div>
+                        <button id="clear" (click)="fetchAllBooks()">VIEW ALL BOOKS</button>
+                        <button id="clear" (click)="deleteAllBooks()">DELETE ALL BOOKS</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
