@@ -53,14 +53,12 @@
 }
 
 .second{
-
-   
     margin-top: 60px;
     margin-left: -40px;
     padding-right: 10px;
 }
-.secondd{
 
+.secondd{
     width: 80%;
     margin-top: 60px;
     padding-left: 300px;
@@ -71,24 +69,21 @@
     margin-top: 60px;
     padding-left: 200px;
     padding-right: 50px;
-    
-
 }
+
 .firstt{
     margin-top: 60px;
     padding-left: 190px;
     padding-right: 50px;
-
 }
+
 #submit:hover{
     cursor: pointer;
     background-color: darkcyan;
 }
 
 #submit{
-    
     padding: 10px;
-    border-radius: 5px;
     color:black;
     background-color: white;
 }
@@ -112,7 +107,7 @@
     margin-right: 80px;
 }
 #text{
-
+    border-radius: 5px;
     width: 400px;
 }
 .dis{
@@ -158,7 +153,6 @@ td,tr{
     margin: 10px;
     margin-left: 20px;
     margin-right: -10px;
-    border-radius: 5px;
     color:black;
     background-color: white;
 }
