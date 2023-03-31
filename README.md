@@ -1,27 +1,72 @@
-# Frontend
+# Library Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+# Getting Started
+To get started with the app, follow these simple steps:
+1. Clone the current Repository using the below command <br/>
+<strong>git clone https://github.com/Chakit22/LibraryManagementFrontend.git <br/></strong>
+2. Install the dependencies using <strong>npm install</strong>
 
-## Development server
+# GitHub link to the Server (Back End Files)
+Kindly Navigate to the below URL for accessing the Backend Files <br/>
+https://github.com/Chakit22/LibraryManagementBackend
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Dependencies
 
-## Code scaffolding
+# Bootstrap
+<strong>npm install @ng-bootstrap/ng-bootstrap </strong>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Font Awesome
+<strong>npm install @fortawesome/fontawesome-svg-core <br/>
+npm install @fortawesome/free-brands-svg-icons <br/>
+npm install @fortawesome/free-regular-svg-icons <br/>
+npm install @fortawesome/free-solid-svg-icons <br/>
+npm install @fortawesome/angular-fontawesome </strong>
 
-## Build
+# Nodemon
+<strong>npm install -g nodemon</strong>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Start the development server [Front End]
+1. Navigate to the current folder and run the command <strong>ng serve</strong>
+2. Visit http://localhost:4200 in your browser and acces the application
 
-## Running unit tests
+# Start the development server [Back End]
+1. Navigate to the <strong>src</strong> folder.
+2. Run the command <strong>nodemon app.js</strong>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Credentials for Login
+<strong>User ID</strong>: Chakit <br/>
+<strong>Password</strong>: 123456
 
-## Running end-to-end tests
+# Running the tests
+To run the tests use the command <strong>ng test</strong>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
+# Deployment
+To deploy the app use the command <strong>ng build --prod</strong>
 
-## Further help
+# Snapshots
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Login Page
+
+![Login Page](https://user-images.githubusercontent.com/118890138/229032119-88940740-c4d2-4ab2-b65a-8d13c6b4fb5c.png)
+
+# Dashboard
+
+![Dashboard1](https://user-images.githubusercontent.com/118890138/229032215-fac62a9f-885c-4528-8632-162bc537848c.png)
+
+![Dashboard2](https://user-images.githubusercontent.com/118890138/229032227-9645be59-8de1-4a4c-ac55-ec697501790b.png)
+
+# Demo 
+https://user-images.githubusercontent.com/118890138/229032481-9e462ec0-7671-40cc-b605-407ab5c13ca9.mp4
+
+# Built With
+
+### Frontend
+* Angular
+* HTML
+* CSS
+
+### Backend
+* NodeJS
+
+### Database 
+* MySQL
