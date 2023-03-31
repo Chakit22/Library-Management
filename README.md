@@ -3,7 +3,7 @@
 # Getting Started
 To get started with the app, follow these simple steps:
 1. Clone the current Repository using the below command <br/>
-<strong>git clone https://github.com/Chakit22/LibraryManagementFrontend.git <br/></strong>
+<strong>git clone https://github.com/Chakit22/Library-Management.git <br/></strong>
 2. Install the dependencies using <strong>npm install</strong>
 
 # GitHub link to the Server (Back End Files)
